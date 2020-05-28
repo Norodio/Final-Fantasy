@@ -227,9 +227,9 @@ public class Item
 		type = t;
 	}
 
-	public void setName(int n)
+	public void setName(String n)
 	{
-		name = n; 
+		this.name = n;
 	}
 
 	public void setImage(String i)

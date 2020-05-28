@@ -191,7 +191,7 @@ public class Decor
 			tabPnj[5] = new Pnj (860, 1000, 13); //homme musclé
 			tabPnj[6] = new Pnj (1000, 940, 13); //homme musclé haut droite
 			tabPnj[7] = new Pnj (800, 1120, 13); //homme musclé bas gauche
-			tabPnj[8] = new Pnj (1200, 1120, 2); //maire roi ? 
+			tabPnj[8] = new Pnj (1200, 1120, 2); //maire roi ?
 			//CreerPnj(tabE,4,3,1,1);
 
 
@@ -331,7 +331,7 @@ public class Decor
 		return tabI.length;
 	}
 
-	public Monstre getItem (int i)
+	public Item getItem (int i)
 	{
 		return tabI[i];
 	}

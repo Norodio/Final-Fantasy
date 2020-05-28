@@ -177,18 +177,17 @@ public class Panneau extends JPanel
 			}
 		}
 
-		for (int j = 0; j < monde[mondeActuel].getNbItem(); j++)
+		for (int j = 0; j < monde[mondeActuel].getNbItems(); j++)
 		{
 			if ((h.getX() >= monde[mondeActuel].getItem(j).getX() - 20) && (h.getX() <= monde[mondeActuel].getItem(j).getX() + 20) &&
 				(h.getY() >= monde[mondeActuel].getItem(j).getY() - 20) && (h.getY() <= monde[mondeActuel].getItem(j).getY() + 20))
 			{
 				isItem = true;
-				ItemActif = j;
-				getH.getInv.addItem(monde[mondeActuel].getItem(j));
-				monde[mondeActuel].getItem(j).x = 20000;
-				monde[mondeActuel].getItem(j).y = 20000;
+				h.getInv().addItem(monde[mondeActuel].getItem(j));
+				monde[mondeActuel].getItem(j);
+				monde[mondeActuel].getItem(j);
 
-				System.out.println(getH.getInv.PrintInv());
+				System.out.println(h.getInv().printInv());
 			}
 		}
 

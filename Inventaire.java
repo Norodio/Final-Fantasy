@@ -28,7 +28,7 @@ public class Inventaire
 	{
 		return this.inv.size();
 	}
- 
+
 	public boolean clefPresente() //taille actuel
 	{
 		boolean objetPresent = false;
@@ -47,8 +47,8 @@ public class Inventaire
 		String text = "";
 		for(int i = 0;i<this.inv.size();i++)
 		{
-			text += i.getName();
+			text += inv.get(i).getName();
 		}
-		return objetPresent;
+		return text;
 	}
 }
