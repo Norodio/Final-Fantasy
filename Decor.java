@@ -180,7 +180,7 @@ public class Decor
 			tabE[38][37].setType(25);// grotte
 			tabE[38][38].setType(26);// grotte
 
-			tabE[45][49].setType(41);//porte fermee
+			tabE[51][44].setType(42);//porte ouverte
 
 
 
