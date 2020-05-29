@@ -94,7 +94,7 @@ public class Panneau extends JPanel
 			{
 				g.drawImage(Toolkit.getDefaultToolkit().getImage(monde[mondeActuel].getItem(i).getImage()), monde[mondeActuel].getItem(i).getX() + monde[mondeActuel].getX(), monde[mondeActuel].getItem(i).getY() + monde[mondeActuel].getY(), 20, 20, this);
 			}
-
+			
 			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), h.getX() + monde[mondeActuel].getX(), h.getY() + monde[mondeActuel].getY(), 20, 20, this);
 
 			}

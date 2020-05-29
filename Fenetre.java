@@ -357,12 +357,18 @@ public class Fenetre extends JFrame implements KeyListener, Runnable, ActionList
 			bas = true;
 			getH().setType(10);
 
+			//Changement image déplacement
+			pan.getH().setImage("images/perso/hero/fighter-front.gif");
+
 		}
 		else
 		{
 			if(ke.getKeyCode()==KeyEvent.VK_UP)
 			{
 				haut = true;
+
+				//Changement image déplacement
+				pan.getH().setImage("images/perso/hero/fighter-back.gif");
 
 			}
 			else
@@ -371,12 +377,18 @@ public class Fenetre extends JFrame implements KeyListener, Runnable, ActionList
 				{
 					gauche = true;
 
+					//Changement image déplacement
+					pan.getH().setImage("images/perso/hero/fighter-left.gif");
+
 				}
 				else
 				{
 					if(ke.getKeyCode()==KeyEvent.VK_RIGHT)
 					{
 						droite = true;
+
+						//Changement image déplacement
+						pan.getH().setImage("images/perso/hero/fighter-right.gif");
 
 					}
 				}
@@ -412,6 +424,9 @@ public class Fenetre extends JFrame implements KeyListener, Runnable, ActionList
 				}
 			}
 		}
+
+		//Changement image déplacement
+		pan.getH().setImage("images/perso/hero/fighter-front.gif");
 	}
 
 	public void keyTyped(KeyEvent ke)
