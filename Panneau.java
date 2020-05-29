@@ -11,6 +11,7 @@ public class Panneau extends JPanel
 	private int mondeActuel;
 	private Hero h, hMage;
 	private int pnjActif, monstreActif;
+	private boolean inventaireActif;
 
 
 
@@ -33,6 +34,15 @@ public class Panneau extends JPanel
 	}
 
 	//méthode
+	public void setInventaireActif(boolean b)
+	{
+		this.inventaireActif = b;
+	}
+
+	public boolean getInventaireActif()
+	{
+		return inventaireActif;
+	}
 
 	public Hero getH()
 	{
@@ -94,7 +104,7 @@ public class Panneau extends JPanel
 			{
 				g.drawImage(Toolkit.getDefaultToolkit().getImage(monde[mondeActuel].getItem(i).getImage()), monde[mondeActuel].getItem(i).getX() + monde[mondeActuel].getX(), monde[mondeActuel].getItem(i).getY() + monde[mondeActuel].getY(), 20, 20, this);
 			}
-			
+
 			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), h.getX() + monde[mondeActuel].getX(), h.getY() + monde[mondeActuel].getY(), 20, 20, this);
 
 			}
@@ -137,6 +147,14 @@ public class Panneau extends JPanel
 			//Affichage Pnj
 			for (int i = 0; i < monde[mondeActuel].getNbPnj(); i++)
 			{ g.drawImage(Toolkit.getDefaultToolkit().getImage(monde[mondeActuel].getPnj(i).getImage()), monde[mondeActuel].getPnj(i).getX() + monde[mondeActuel].getX(), monde[mondeActuel].getPnj(i).getY() + monde[mondeActuel].getY(), 20, 20, this);
+			}
+
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), h.getX() + monde[mondeActuel].getX(), h.getY() + monde[mondeActuel].getY(), 20, 20, this);
+
+			//Affichage Items
+			for (int i = 0; i < monde[mondeActuel].getNbItems(); i++)
+			{
+				g.drawImage(Toolkit.getDefaultToolkit().getImage(monde[mondeActuel].getItem(i).getImage()), monde[mondeActuel].getItem(i).getX() + monde[mondeActuel].getX(), monde[mondeActuel].getItem(i).getY() + monde[mondeActuel].getY(), 20, 20, this);
 			}
 
 			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), h.getX() + monde[mondeActuel].getX(), h.getY() + monde[mondeActuel].getY(), 20, 20, this);
@@ -224,6 +242,14 @@ public class Panneau extends JPanel
 			}
 		}
 		return isMonstre;
+	}
+
+	public void afficherInventaire()
+	{
+		if(inventaireActif)
+		{
+			
+		}
 	}
 
 

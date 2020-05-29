@@ -391,6 +391,14 @@ public class Fenetre extends JFrame implements KeyListener, Runnable, ActionList
 						pan.getH().setImage("images/perso/hero/fighter-right.gif");
 
 					}
+					else
+					{
+						if(ke.getKeyCode()==KeyEvent.VK_I)
+						{
+							pan.setInventaireActif(!pan.getInventaireActif());
+
+						}
+					}
 				}
 			}
 		}
