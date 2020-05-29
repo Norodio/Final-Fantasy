@@ -28,7 +28,7 @@ public class Pnj
 
 
 			case 2:
-				this.dialogue="Bienvenue jeune hero";
+				this.dialogue="Bienvenue jeune hero, prends cette epee et protege notre village !";
 				image = "images/perso/PNJ/maire.gif";
 
 				break;
