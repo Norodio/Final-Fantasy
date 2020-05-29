@@ -1,6 +1,6 @@
 public class ElementDecor
 {
-	private int type; 
+	private int type;
 	private String image;
 	private boolean traverse;
 
@@ -174,7 +174,7 @@ public class ElementDecor
 																										image = "images/decor/grotte-coindh.png";
 																										traverse = false;
 																									}
-																								
+
 																									else
 																									{
 																										if(type == 25)
@@ -203,7 +203,7 @@ public class ElementDecor
 																														image = "images/decor/taverne-coindh.png";
 																														traverse = false;
 																													}
-																													
+
 																													else
 																													{
 																														if(type == 29)
@@ -245,7 +245,7 @@ public class ElementDecor
 																																			{
 																																				image = "images/decor/mairie-coindb.png";
 																																				traverse = false;
-																																				
+
 																																			}
 																																			else
 																																			{
@@ -289,6 +289,22 @@ public class ElementDecor
 																																										image = "images/decor/maisond.png";
 																																										traverse = false;
 																																									}
+																																									else
+																																									{
+																																										if(type == 41)
+																																										{
+																																											image = "images/decor/porteFermee.png";
+																																											traverse = false;
+																																										}
+																																										else
+																																										{
+																																											if(type == 42)
+																																											{
+																																												image = "images/decor/porteOuverte.png";
+																																												traverse = false;
+																																											}
+																																										}
+																																									}
 																																								}
 																																							}
 																																						}
@@ -298,7 +314,7 @@ public class ElementDecor
 																																		}
 																																	}
 																																}
-																															}	
+																															}
 																														}
 																													}
 																												}
@@ -311,7 +327,7 @@ public class ElementDecor
 																					}
 																				}
 																			}
-																		}	
+																		}
 																	}
 																}
 															}
@@ -324,8 +340,8 @@ public class ElementDecor
 								}
 							}
 						}
-					}																			
-				}		
+					}
+				}
 			}
 		}
 	}
@@ -518,7 +534,7 @@ public class ElementDecor
 																										image = "images/decor/grotte-coindh.png";
 																										traverse = false;
 																									}
-																								
+
 																									else
 																									{
 																										if(type == 25)
@@ -559,7 +575,7 @@ public class ElementDecor
 																															if(type == 30)
 																															{
 																																image = "images/decor/taverne-coindb.png";
-																																traverse = false;	
+																																traverse = false;
 																															}
 																															else
 																															{
@@ -644,7 +660,7 @@ public class ElementDecor
 																														}
 																													}
 																												}
-																											}	
+																											}
 																										}
 																									}
 																								}
@@ -666,12 +682,12 @@ public class ElementDecor
 								}
 							}
 						}
-					}																			
-				}		
+					}
+				}
 			}
 		}
 	}
-	
+
 
 
 	public void setImage(String i)

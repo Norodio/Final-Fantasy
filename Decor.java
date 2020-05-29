@@ -180,6 +180,8 @@ public class Decor
 			tabE[38][37].setType(25);// grotte
 			tabE[38][38].setType(26);// grotte
 
+			tabE[45][49].setType(41);//porte fermee
+
 
 
 			//PNJ
@@ -202,7 +204,7 @@ public class Decor
 			tabM[0] = new Monstre (200, 200, 3);
 
 			//Items
-			tabI = new Item [7];
+			tabI = new Item [8];
 			tabI[0] = new Item (250, 250, 2, "clef");
 			tabI[1] = new Item (1220, 1120, 1, "sword");
 			tabI[2] = new Item (270, 270, 8, "potion");
@@ -210,6 +212,7 @@ public class Decor
 			tabI[4] = new Item (400, 300, 11, "coffre");
 			tabI[5] = new Item (450, 300, 12, "crane");
 			tabI[6] = new Item (500, 300, 22, "torche");
+			tabI[7] = new Item (880, 1020, 3, "porteFermee");
 		}
 
 		if(type==2)

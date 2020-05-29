@@ -30,14 +30,14 @@ public class Item
 			{
 				if(type==3)
 				{
-				//image = "images/item/bouclier.jpg";
+				image = "images/decor/porteFermee.png";
 				ramassable = true; // ramassable
 				}
 				else
 				{
 					if(type==4)
 					{
-					//	image = "images/item/armure.jpg";
+						image = "images/decor/porteOuverte.png";
 						ramassable = true; // ramassable
 					}
 					else
