@@ -255,9 +255,6 @@ public class Panneau extends JPanel
 			ArrayList<Item> inventory = h.getInv().getInv();
 			int tailleInv = h.getInv().getSizeInv();
 
-			System.out.println(h.getInv().printInv()+"    "+tailleInv+"\n");
-
-
 			g.setColor(new Color(64,64,64));
 			g.fillRect(500,70,190,210);
 			g.setColor(Color.GRAY);
