@@ -1,5 +1,6 @@
 import java.awt.*;
 import javax.swing.*;
+import java.util.ArrayList;
 
 
 public class Panneau extends JPanel
@@ -215,8 +216,8 @@ public class Panneau extends JPanel
 			{
 				isItem = true;
 				h.getInv().addItem(monde[mondeActuel].getItem(j));
-				monde[mondeActuel].getItem(j);
-				monde[mondeActuel].getItem(j);
+				monde[mondeActuel].getItem(j).x(20000);
+				monde[mondeActuel].getItem(j).y(20000);
 
 			}
 		}
@@ -251,6 +252,11 @@ public class Panneau extends JPanel
 	{
 		if(inventaireActif)
 		{
+			ArrayList<Item> inventory = h.getInv().getInv();
+			int tailleInv = h.getInv().getSizeInv();
+
+			System.out.println(h.getInv().printInv()+"    "+tailleInv+"\n");
+
 
 			g.setColor(new Color(64,64,64));
 			g.fillRect(500,70,190,210);
@@ -260,29 +266,152 @@ public class Panneau extends JPanel
 			g.drawRect(500,70,190,210);
 			g.drawString("Inventaire", 570, 86);
 
-			g.drawString("nom item",510, 150);
-			g.drawString("nom item",570, 150);
-			g.drawString("nom item",630, 150);
+			for(int i = 0;i<tailleInv;i++)
+			{
+				switch(tailleInv)
+				{
+					case 0:
+						break;
 
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 520, 100, 30, 30, this);
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 580, 100, 30, 30, this);
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 640, 100, 30, 30, this);
+					case 1:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						break;
 
-			g.drawString("nom item",510, 210);
-			g.drawString("nom item",570, 210);
-			g.drawString("nom item",630, 210);
+					case 2:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						break;
 
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 520, 160, 30, 30, this);
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 580, 160, 30, 30, this);
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 640, 160, 30, 30, this);
+				  case 3:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						g.drawString(inventory.get(2).getName(),630, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(2).getImage()), 640, 100, 30, 30, this);
+					  break;
 
-			g.drawString("nom item",510, 270);
-			g.drawString("nom item",570, 270);
-			g.drawString("nom item",630, 270);
+					case 4:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						g.drawString(inventory.get(2).getName(),630, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(2).getImage()), 640, 100, 30, 30, this);
+						g.drawString(inventory.get(3).getName(),510, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(3).getImage()), 520, 160, 30, 30, this);
+						break;
 
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 520, 220, 30, 30, this);
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 580, 220, 30, 30, this);
-			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 640, 220, 30, 30, this);
+					case 5:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						g.drawString(inventory.get(2).getName(),630, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(2).getImage()), 640, 100, 30, 30, this);
+						g.drawString(inventory.get(3).getName(),510, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(3).getImage()), 520, 160, 30, 30, this);
+						g.drawString(inventory.get(4).getName(),570, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(4).getImage()), 580, 160, 30, 30, this);
+						break;
+
+					case 6:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						g.drawString(inventory.get(2).getName(),630, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(2).getImage()), 640, 100, 30, 30, this);
+						g.drawString(inventory.get(3).getName(),510, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(3).getImage()), 520, 160, 30, 30, this);
+						g.drawString(inventory.get(4).getName(),570, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(4).getImage()), 580, 160, 30, 30, this);
+						g.drawString(inventory.get(5).getName(),630, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(5).getImage()), 640, 160, 30, 30, this);
+						break;
+
+					case 7:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						g.drawString(inventory.get(2).getName(),630, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(2).getImage()), 640, 100, 30, 30, this);
+						g.drawString(inventory.get(3).getName(),510, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(3).getImage()), 520, 160, 30, 30, this);
+						g.drawString(inventory.get(4).getName(),570, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(4).getImage()), 580, 160, 30, 30, this);
+						g.drawString(inventory.get(5).getName(),630, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(5).getImage()), 640, 160, 30, 30, this);
+						g.drawString(inventory.get(6).getName(),510, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(6).getImage()), 520, 220, 30, 30, this);
+						break;
+
+					case 8:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						g.drawString(inventory.get(2).getName(),630, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(2).getImage()), 640, 100, 30, 30, this);
+						g.drawString(inventory.get(3).getName(),510, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(3).getImage()), 520, 160, 30, 30, this);
+						g.drawString(inventory.get(4).getName(),570, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(4).getImage()), 580, 160, 30, 30, this);
+						g.drawString(inventory.get(5).getName(),630, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(5).getImage()), 640, 160, 30, 30, this);
+						g.drawString(inventory.get(6).getName(),510, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(6).getImage()), 520, 220, 30, 30, this);
+						g.drawString(inventory.get(7).getName(),570, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(7).getImage()), 580, 220, 30, 30, this);
+						break;
+
+					case 9:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						g.drawString(inventory.get(2).getName(),630, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(2).getImage()), 640, 100, 30, 30, this);
+						g.drawString(inventory.get(3).getName(),510, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(3).getImage()), 520, 160, 30, 30, this);
+						g.drawString(inventory.get(4).getName(),570, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(4).getImage()), 580, 160, 30, 30, this);
+						g.drawString(inventory.get(5).getName(),630, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(5).getImage()), 640, 160, 30, 30, this);
+						g.drawString(inventory.get(6).getName(),510, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(6).getImage()), 520, 220, 30, 30, this);
+						g.drawString(inventory.get(7).getName(),570, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(7).getImage()), 580, 220, 30, 30, this);
+						g.drawString(inventory.get(8).getName(),630, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(8).getImage()), 640, 220, 30, 30, this);
+						break;
+
+					default:
+						g.drawString(inventory.get(0).getName(),510, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(0).getImage()), 520, 100, 30, 30, this);
+						g.drawString(inventory.get(1).getName(),570, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(1).getImage()), 580, 100, 30, 30, this);
+						g.drawString(inventory.get(2).getName(),630, 150);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(2).getImage()), 640, 100, 30, 30, this);
+						g.drawString(inventory.get(3).getName(),510, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(3).getImage()), 520, 160, 30, 30, this);
+						g.drawString(inventory.get(4).getName(),570, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(4).getImage()), 580, 160, 30, 30, this);
+						g.drawString(inventory.get(5).getName(),630, 210);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(5).getImage()), 640, 160, 30, 30, this);
+						g.drawString(inventory.get(6).getName(),510, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(6).getImage()), 520, 220, 30, 30, this);
+						g.drawString(inventory.get(7).getName(),570, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(7).getImage()), 580, 220, 30, 30, this);
+						g.drawString(inventory.get(8).getName(),630, 270);
+						g.drawImage(Toolkit.getDefaultToolkit().getImage(inventory.get(8).getImage()), 640, 220, 30, 30, this);
+						break;
+				}
+			}
 		}
 	}
 

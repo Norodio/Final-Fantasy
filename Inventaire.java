@@ -15,6 +15,11 @@ public class Inventaire
 		*/
 	}
 
+	public ArrayList<Item> getInv()
+	{
+		return inv;
+	}
+
 	public void addItem(Item i)
 	{
 		this.inv.add(i);
