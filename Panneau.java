@@ -162,9 +162,9 @@ public class Panneau extends JPanel
 
 			//mode dialogue
 			g.setColor(Color.BLUE);
-			g.fillRect(70,70,180,60);
+			g.fillRect(70,70,400,60);
 			g.setColor(Color.WHITE);
-			g.drawRect(70,70,180,60);
+			g.drawRect(70,70,400,60);
 			g.drawString(monde[mondeActuel].getPnj(pnjActif).getDialogue(),100,100);
 		}
 

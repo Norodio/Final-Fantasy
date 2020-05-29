@@ -28,7 +28,7 @@ public class Pnj
 
 
 			case 2:
-				this.dialogue="Bienvenue jeune hero";
+				this.dialogue="Bienvenue jeune hero, prends cette epee et protege notre village !";
 				image = "images/perso/PNJ/maire.gif";
 
 				break;
@@ -79,19 +79,19 @@ public class Pnj
 				break;
 
 			case 11:
-				this.dialogue = "...";
+				this.dialogue = "N'hesite pas à venir nous voir !";
 				image = "images/perso/PNJ/homme.gif";
 
 				break;
 
 			case 12:
-				this.dialogue = "...";
+				this.dialogue = "Prends un peu de temps pour te reposer...";
 				image = "images/perso/PNJ/femme.gif";
 
 				break;
 
 			case 13:
-				this.dialogue = "Heuresement que tu es là pour protéger le village !";
+				this.dialogue = "Heuresement que tu es la pour proteger le village !";
 				image = "images/perso/PNJ/homme2.gif";
 
 				break;
@@ -165,7 +165,7 @@ public class Pnj
 
 	public void setImage(String image)
 	{
-		this.image = image; 
+		this.image = image;
 	}
 
 	public String getDialogue()
