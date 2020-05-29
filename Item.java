@@ -64,7 +64,7 @@ public class Item
 								{
 									if(type==8)
 									{
-									image = "images/item/potion.jpg";
+									image = "images/item/potion.gif";
 									ramassable = true; // ramassable
 									}
 									else
