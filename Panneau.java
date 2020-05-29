@@ -215,9 +215,21 @@ public class Panneau extends JPanel
 				(h.getY() >= monde[mondeActuel].getItem(j).getY() - 20) && (h.getY() <= monde[mondeActuel].getItem(j).getY() + 20))
 			{
 				isItem = true;
-				h.getInv().addItem(monde[mondeActuel].getItem(j));
-				monde[mondeActuel].getItem(j).x(20000);
-				monde[mondeActuel].getItem(j).y(20000);
+				if(monde[mondeActuel].getItem(j).getType() == 3)
+				{
+					if(h.getInv().clefPresente())
+					{
+						monde[mondeActuel].getItem(j).x(20000);
+						monde[mondeActuel].getItem(j).y(20000);
+					}
+				}
+				else
+				{
+					h.getInv().addItem(monde[mondeActuel].getItem(j));
+					monde[mondeActuel].getItem(j).x(20000);
+					monde[mondeActuel].getItem(j).y(20000);
+				}
+
 
 			}
 		}
