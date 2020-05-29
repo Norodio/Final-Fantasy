@@ -17,7 +17,7 @@ public class Fenetre extends JFrame implements KeyListener, Runnable, ActionList
 
 	public Fenetre ()
 	{
-		super(); 
+		super();
 
 
 		this.setTitle("FinalFantasy I");
@@ -277,7 +277,7 @@ public class Fenetre extends JFrame implements KeyListener, Runnable, ActionList
 								pan.getH().setX(pan.getH().getX()-1);
 								if(pan.getH().getX()>400 && pan.getH().getX()<1620)
 								{
-									pan.getMondeEnCours().setX(pan.getMondeEnCours().getX()-1);
+									pan.getMondeEnCours().setX(pan.getMondeEnCours().getX()+1);
 								}
 							}
 						}
@@ -286,7 +286,7 @@ public class Fenetre extends JFrame implements KeyListener, Runnable, ActionList
 							pan.getH().setX(pan.getH().getX()-1);
 							if(pan.getH().getX()>400 && pan.getH().getX()<1620)
 							{
-								pan.getMondeEnCours().setX(pan.getMondeEnCours().getX()-1);
+								pan.getMondeEnCours().setX(pan.getMondeEnCours().getX()+1);
 							}
 						}
 					}
