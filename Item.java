@@ -78,7 +78,7 @@ public class Item
 										{
 											if(type==11)
 											{
-												image = "images/item/coffreFerme.jpg";
+												image = "images/item/coffre.jpg";
 												ramassable = true; // ramassable
 											}
 											else

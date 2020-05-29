@@ -207,7 +207,7 @@ public class Decor
 			tabI[1] = new Item (1220, 1120, 1, "sword");
 			tabI[2] = new Item (270, 270, 8, "potion");
 			tabI[3] = new Item (300, 300, 9, "coin");
-			tabI[4] = new Item (400, 300, 11, "coffreFerme");
+			tabI[4] = new Item (400, 300, 11, "coffre");
 			tabI[5] = new Item (450, 300, 12, "crane");
 			tabI[6] = new Item (500, 300, 22, "torche");
 		}
