@@ -247,14 +247,8 @@ public class Panneau extends JPanel
 			}
 			else
 			{
-				if(isItem)
-				{
-					affiche=4;
-				}
-				else
-				{
-					affiche = 1;
-				}
+				affiche = 1;
+
 			}
 		}
 		return isMonstre;
