@@ -26,6 +26,8 @@ public class Panneau extends JPanel
 
 		h = new Hero();
 		hMage = new Hero();
+		monde[mondeActuel].setX(-h.getX()+400);
+		monde[mondeActuel].setY(-h.getY()+300);
 
 
 	}

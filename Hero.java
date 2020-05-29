@@ -9,14 +9,14 @@ public class Hero extends Monstre
 	// Constructeur
 	public Hero ()
 	{
-		super(40,40,10);
+		super(1000,1000,10);
 		xp = 0;
 		niveau = 1;
 		inv = new Inventaire();
 		pv = 30;
 	}
 
-		//accesseurs 
+		//accesseurs
 	public int getXp()
 	{
 		return xp;
