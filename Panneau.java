@@ -83,12 +83,20 @@ public class Panneau extends JPanel
 
 			//Affichage Pnj
 			for (int i = 0; i < monde[mondeActuel].getNbPnj(); i++)
-			{ g.drawImage(Toolkit.getDefaultToolkit().getImage(monde[mondeActuel].getPnj(i).getImage()), monde[mondeActuel].getPnj(i).getX() + monde[mondeActuel].getX(), monde[mondeActuel].getPnj(i).getY() + monde[mondeActuel].getY(), 20, 20, this);
+			{
+				g.drawImage(Toolkit.getDefaultToolkit().getImage(monde[mondeActuel].getPnj(i).getImage()), monde[mondeActuel].getPnj(i).getX() + monde[mondeActuel].getX(), monde[mondeActuel].getPnj(i).getY() + monde[mondeActuel].getY(), 20, 20, this);
+			}
+
+			//Affichage Items
+			for (int i = 0; i < monde[mondeActuel].getNbItems(); i++)
+			{
+				g.drawImage(Toolkit.getDefaultToolkit().getImage(monde[mondeActuel].getItem(i).getImage()), monde[mondeActuel].getItem(i).getX() + monde[mondeActuel].getX(), monde[mondeActuel].getItem(i).getY() + monde[mondeActuel].getY(), 20, 20, this);
 			}
 
 			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), h.getX() + monde[mondeActuel].getX(), h.getY() + monde[mondeActuel].getY(), 20, 20, this);
 
 			}
+
 
 		if (affiche == 2)
 		{
@@ -187,7 +195,6 @@ public class Panneau extends JPanel
 				monde[mondeActuel].getItem(j);
 				monde[mondeActuel].getItem(j);
 
-				System.out.println(h.getInv().printInv());
 			}
 		}
 
