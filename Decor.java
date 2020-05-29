@@ -205,13 +205,13 @@ public class Decor
 
 			//Items
 			tabI = new Item [8];
-			tabI[0] = new Item (250, 250, 2, "clef");
+			tabI[0] = new Item (960, 1140, 2, "clef");
 			tabI[1] = new Item (1220, 1120, 1, "sword");
-			tabI[2] = new Item (270, 270, 8, "potion");
-			tabI[3] = new Item (300, 300, 9, "coin");
-			tabI[4] = new Item (400, 300, 11, "coffre");
-			tabI[5] = new Item (450, 300, 12, "crane");
-			tabI[6] = new Item (500, 300, 22, "torche");
+			tabI[2] = new Item (1220, 1140, 8, "potion");
+			tabI[3] = new Item (1240, 1140, 9, "coin");
+			tabI[4] = new Item (1240, 1120, 11, "coffre");
+			tabI[5] = new Item (780, 760, 12, "crane");
+			tabI[6] = new Item (720, 760, 22, "torche");
 			tabI[7] = new Item (880, 1020, 3, "porteFermee");
 		}
 

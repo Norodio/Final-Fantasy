@@ -85,7 +85,7 @@ public class Pnj
 				break;
 
 			case 12:
-				this.dialogue = "Pour ouvrir cette porte magique, trouve la clef vers la statue !";
+				this.dialogue = "Pour ouvrir cette porte, trouve la clef vers la statue !";
 				image = "images/perso/PNJ/femme.gif";
 
 				break;
