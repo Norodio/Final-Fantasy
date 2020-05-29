@@ -107,6 +107,7 @@ public class Panneau extends JPanel
 
 			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), h.getX() + monde[mondeActuel].getX(), h.getY() + monde[mondeActuel].getY(), 20, 20, this);
 
+			afficherInventaire(g);
 			}
 
 
@@ -166,6 +167,8 @@ public class Panneau extends JPanel
 			g.setColor(Color.WHITE);
 			g.drawRect(70,70,400,60);
 			g.drawString(monde[mondeActuel].getPnj(pnjActif).getDialogue(),100,100);
+
+			afficherInventaire(g);
 		}
 
 
@@ -244,11 +247,15 @@ public class Panneau extends JPanel
 		return isMonstre;
 	}
 
-	public void afficherInventaire()
+	public void afficherInventaire(Graphics g)
 	{
 		if(inventaireActif)
 		{
-			
+
+			g.setColor(Color.GRAY);
+			g.fillRect(500,70,200,400);
+			g.setColor(Color.WHITE);
+			g.drawRect(500,70,200,400);
 		}
 	}
 

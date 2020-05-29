@@ -226,7 +226,7 @@ public class Decor
 					tabE[i][j] = new ElementDecor(2); // herbe partout
 				}
 			}
-			//dÃ©cor
+			//decor
 			tabE[5][9].setType(1); // Un buisson
 
 			tabE[5][10].setType(4); // Un rocher

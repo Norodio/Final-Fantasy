@@ -79,7 +79,7 @@ public class Pnj
 				break;
 
 			case 11:
-				this.dialogue = "N'hesite pas à venir nous voir !";
+				this.dialogue = "N'hesite pas a venir nous voir !";
 				image = "images/perso/PNJ/homme.gif";
 
 				break;
@@ -91,7 +91,7 @@ public class Pnj
 				break;
 
 			case 13:
-				this.dialogue = "Heuresement que tu es la pour proteger le village !";
+				this.dialogue = "Heureusement que tu es la pour proteger le village !";
 				image = "images/perso/PNJ/homme2.gif";
 
 				break;
