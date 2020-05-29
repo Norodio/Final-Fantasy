@@ -252,10 +252,37 @@ public class Panneau extends JPanel
 		if(inventaireActif)
 		{
 
+			g.setColor(new Color(64,64,64));
+			g.fillRect(500,70,190,210);
 			g.setColor(Color.GRAY);
-			g.fillRect(500,70,200,400);
+			g.fillRect(508,90,175,183);
 			g.setColor(Color.WHITE);
-			g.drawRect(500,70,200,400);
+			g.drawRect(500,70,190,210);
+			g.drawString("Inventaire", 570, 86);
+
+			g.drawString("nom item",510, 150);
+			g.drawString("nom item",570, 150);
+			g.drawString("nom item",630, 150);
+
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 520, 100, 30, 30, this);
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 580, 100, 30, 30, this);
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 640, 100, 30, 30, this);
+
+			g.drawString("nom item",510, 210);
+			g.drawString("nom item",570, 210);
+			g.drawString("nom item",630, 210);
+
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 520, 160, 30, 30, this);
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 580, 160, 30, 30, this);
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 640, 160, 30, 30, this);
+
+			g.drawString("nom item",510, 270);
+			g.drawString("nom item",570, 270);
+			g.drawString("nom item",630, 270);
+
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 520, 220, 30, 30, this);
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 580, 220, 30, 30, this);
+			g.drawImage(Toolkit.getDefaultToolkit().getImage(h.getImage()), 640, 220, 30, 30, this);
 		}
 	}
 
