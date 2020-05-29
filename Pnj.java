@@ -21,14 +21,14 @@ public class Pnj
 			// PNJ
 
 			case 1:
-				dialogue = "Tu veux du pain ?!?";
+				dialogue = "Cette grotte est dangereuse, il ne faut pas y aller.";
 				image = "images/perso/PNJ/bakerman.gif";
 				objet = new Item(x-10,y,2, "clef");
 				break;
 
 
 			case 2:
-				this.dialogue="Bienvenue jeune hero, prends cette epee et protege notre village !";
+				this.dialogue="Bienvenue jeune hero, prends ces items et protege notre village !";
 				image = "images/perso/PNJ/maire.gif";
 
 				break;

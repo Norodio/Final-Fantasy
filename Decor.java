@@ -180,13 +180,13 @@ public class Decor
 			tabE[38][37].setType(25);// grotte
 			tabE[38][38].setType(26);// grotte
 
-			tabE[45][49].setType(41);//porte fermee
+			tabE[51][51].setType(42);//porte ouverte
 
 
 
 			//PNJ
 			tabPnj = new Pnj [9];
-			tabPnj[0] = new Pnj (300, 300, 1); //bakerman
+			tabPnj[0] = new Pnj (740, 800, 1); //bakerman
 			tabPnj[1] = new Pnj (310, 310, 2); //maire, roi ?
 			tabPnj[2] = new Pnj (880, 940, 11); // homme haut gauche
 			tabPnj[3] = new Pnj (940, 1000, 11); // homme
