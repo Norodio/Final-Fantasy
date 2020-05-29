@@ -1,4 +1,5 @@
 public class Decor
+
 {
 	private int type; // grote --> g plaine --> p
 	private int x;
@@ -201,8 +202,14 @@ public class Decor
 			tabM[0] = new Monstre (200, 200, 3);
 
 			//Items
-			tabI = new Item [1];
+			tabI = new Item [7];
 			tabI[0] = new Item (250, 250, 2, "clef");
+			tabI[1] = new Item (260, 260, 1, "sword");
+			tabI[2] = new Item (270, 270, 8, "potion");
+			tabI[3] = new Item (280, 280, 9, "coin");
+			tabI[4] = new Item (290, 290, 11, "coffreFerme");
+			tabI[5] = new Item (300, 300, 12, "crane");
+			tabI[6] = new Item (310, 310, 22, "torche");
 		}
 
 		if(type==2)

@@ -4,7 +4,7 @@ public class Item
 	private String name;
 	private String image;
 	private boolean ramassable;
-	private int x; // pourquoi Scroll sur notre diagramme UML ?
+	private int x;
 	private int y;
 
 	// Constructeur
@@ -16,153 +16,153 @@ public class Item
 		this.name = name;
 		if(type==1)
 		{
-			image = "epee.jpg";
+			image = "images/item/sword.gif";
 			ramassable = true; // ramassable
 		}
 		else
 		{
 			if(type==2)
 			{
-				image = "lance.jpg";
+				image = "images/item/clef.png";
 				ramassable = true; // ramassable
 			}
 			else
 			{
 				if(type==3)
 				{
-				image = "bouclier.jpg";
+				//image = "images/item/bouclier.jpg";
 				ramassable = true; // ramassable
 				}
 				else
 				{
 					if(type==4)
 					{
-						image = "armure.jpg";
+					//	image = "images/item/armure.jpg";
 						ramassable = true; // ramassable
 					}
 					else
 					{
 						if(type==5)
 						{
-						image = "bottes.jpg";
+					//	image = "images/item/bottes.jpg";
 						ramassable = true; // ramassable
 						}
 						else
 							if(type==6)
 							{
-							image = "casque.jpg";
+						//	image = "images/item/casque.jpg";
 							ramassable = true; // ramassable
 							}
 							else
 							{
 								if(type==7)
 								{
-								image = "arc.jpg";
+							//	image = "images/item/arc.jpg";
 								ramassable = true; // ramassable
 								}
 								else
 								{
 									if(type==8)
 									{
-									image = "potion.jpg";
+									image = "images/item/potion.jpg";
 									ramassable = true; // ramassable
 									}
 									else
 									{
 										if(type==9)
 										{
-										image = "piece.jpg";
+										image = "images/item/coin.gif";
 										ramassable = true; // ramassable
 										}
 										else
 										{
 											if(type==11)
 											{
-												image = "coffre.jpg";
+												image = "images/item/coffreFerme.jpg";
 												ramassable = true; // ramassable
 											}
 											else
 											{
 												if(type==12)
 												{
-													image = "crane.jpg";
+													image = "images/item/crane.png";
 													ramassable = true; // ramassable
 												}
 												else
 												{
 													if(type==13)
 													{
-														image = "fiole.jpg";
+													//	image = "images/item/fiole.jpg";
 														ramassable = true; // ramassable
 													}
 													else
 													{
 														if(type==14)
 														{
-															image = "pain.jpg";
+															image = "images/item/pain.png";
 															ramassable = true; // ramassable
 														}
 														else
 														{
 															if(type==15)
 															{
-																image = "panier.jpg";
+															//	image = "images/item/panier.jpg";
 																ramassable = true; // ramassable
 															}
 															else
 															{
 																if(type==17)
 																{
-																	image = "branche.jpg";
+																//	image = "images/item/branche.jpg";
 																	ramassable = true; // ramassable
 																}
 																else
 																{
 																	if(type==18)
 																	{
-																		image = "fruit.jpg";
+																	//	image = "images/item/fruit.jpg";
 																		ramassable = true; // ramassable
 																	}
 																	else
 																	{
 																		if(type==20)
 																		{
-																			image = "sac.jpg";
+																		//	image = "images/item/sac.jpg";
 																			ramassable = true; // ramassable
 																		}
 																		else
 																		{
 																			if(type==22)
 																			{
-																				image = "torche.jpg";
+																				image = "images/item/torche.jpg";
 																				ramassable = true; // ramassable
 																			}
 																			else
 																			{
 																				if(type==23)
 																				{
-																					image = "canneapeche.jpg";
+																				//	image = "images/item/canneapeche.jpg";
 																					ramassable = true; // ramassable
 																				}
 																				else
 																				{
 																					if(type==24)
 																					{
-																						image = "poisson.jpg";
+																					//	image = "images/item/poisson.jpg";
 																						ramassable = true; // ramassable
 																					}
 																					else
 																					{
 																						if(type==25)
 																						{
-																							image = "viande.jpg";
+																						//	image = "images/item/viande.jpg";
 																							ramassable = true; // ramassable
 																						}
 																						else
 																						{
 																							if(type==26)
 																							{
-																								image = "vetement.jpg";
+																						//		image = "images/item/vetement.jpg";
 																								ramassable = true; // ramassable
 																							}
 																						}
