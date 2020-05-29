@@ -293,14 +293,14 @@ public class ElementDecor
 																																									{
 																																										if(type == 41)
 																																										{
-																																											image = "images/decor/porteFermee.png";
+																																											image = "images/decor/porteFermee.PNG";
 																																											traverse = false;
 																																										}
 																																										else
 																																										{
 																																											if(type == 42)
 																																											{
-																																												image = "images/decor/porteOuverte.png";
+																																												image = "images/decor/porteOuverte.PNG";
 																																												traverse = false;
 																																											}
 																																										}
@@ -646,6 +646,22 @@ public class ElementDecor
 																																									{
 																																										image = "images/decor/maisond.png";
 																																										traverse = false;
+																																									}
+																																									else
+																																									{
+																																										if(type == 41)
+																																										{
+																																											image = "images/decor/porteFermee.PNG";
+																																											traverse = false;
+																																										}
+																																										else
+																																										{
+																																											if(type == 42)
+																																											{
+																																												image = "images/decor/porteOuverte.PNG";
+																																												traverse = false;
+																																											}
+																																										}
 																																									}
 																																								}
 																																							}
